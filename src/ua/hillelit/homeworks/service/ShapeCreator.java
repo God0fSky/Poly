@@ -20,7 +20,7 @@ public class ShapeCreator {
 
     public static void sumOfSquares(Calculateable[] shapes) {
         double sum = 0;
-        for(Calculateable s: shapes) {
+        for (Calculateable s : shapes) {
             sum += s.calcSquare();
         }
         System.out.println(sum);
