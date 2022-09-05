@@ -33,9 +33,9 @@ public class RouteCreator {
             for (int j = 0; j < barriers.length; j++) {
 
                 if (barriers[j] instanceof Treadmill) {
-                    if(checkOfRunDistance(participants[i], barriers[j]) == false) break;
+                    if (checkOfRunDistance(participants[i], barriers[j]) == false) break;
                 } else {
-                    if(checkOfJumpHeight(participants[i], barriers[j]) == false) break;
+                    if (checkOfJumpHeight(participants[i], barriers[j]) == false) break;
                 }
             }
             System.out.println();

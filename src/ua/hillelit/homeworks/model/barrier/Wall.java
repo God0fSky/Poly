@@ -18,7 +18,4 @@ public class Wall extends Barrier {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
 }

@@ -18,7 +18,5 @@ public class Treadmill extends Barrier {
         return length;
     }
 
-    public void setLength(int length) {
-        this.length = length;
-    }
+
 }

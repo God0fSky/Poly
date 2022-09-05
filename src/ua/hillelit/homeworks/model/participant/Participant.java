@@ -19,23 +19,12 @@ public abstract class Participant {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getMaxRunDistance() {
         return maxRunDistance;
-    }
-
-    public void setMaxRunDistance(int maxRunDistance) {
-        this.maxRunDistance = maxRunDistance;
     }
 
     public int getMaxJumpHeight() {
         return maxJumpHeight;
     }
 
-    public void setMaxJumpHeight(int maxJumpHeight) {
-        this.maxJumpHeight = maxJumpHeight;
-    }
 }
