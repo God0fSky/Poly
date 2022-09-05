@@ -2,8 +2,8 @@ package ua.hillelit.homeworks.model.participant;
 
 public class Human extends Participant {
 
-    public Human(String name) {
-        super(name);
+    public Human(String name, int maxRunDistance, int maxJumpHeight) {
+        super(name, maxRunDistance, maxJumpHeight);
     }
 
     @Override

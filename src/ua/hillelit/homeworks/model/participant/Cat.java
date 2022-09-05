@@ -3,8 +3,8 @@ package ua.hillelit.homeworks.model.participant;
 public class Cat extends Participant {
 
 
-    public Cat(String name) {
-        super(name);
+    public Cat(String name, int maxRunDistance, int maxJumpHeight) {
+        super(name, maxRunDistance, maxJumpHeight);
     }
 
     @Override

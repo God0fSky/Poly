@@ -17,4 +17,6 @@ public abstract class Barrier {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }
