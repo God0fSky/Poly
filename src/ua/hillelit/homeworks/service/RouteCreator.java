@@ -25,45 +25,7 @@ public class RouteCreator {
         Participant[] participants = {human, cat, robot};
         Barrier[] barriers = {treadmill1, wall1, treadmill2, wall2, treadmill3, wall3};
 
-        passage(participants, barriers);
-    }
-
-    private static void passage(Participant[] participants, Barrier[] barriers) {
-        for (int i = 0; i < participants.length; i++) {
-            for (int j = 0; j < barriers.length; j++) {
-
-                if (barriers[j] instanceof Treadmill) {
-                    if (checkOfRunDistance(participants[i], barriers[j]) == false) break;
-                } else {
-                    if (checkOfJumpHeight(participants[i], barriers[j]) == false) break;
-                }
-            }
-            System.out.println();
-        }
-    }
-
-    private static boolean checkOfRunDistance(Participant participant, Barrier barrier) {
-        participant.run();
-        if (participant.getMaxRunDistance() >= ((Treadmill) barrier).getLength()) {
-            barrier.overcome();
-        } else {
-            System.out.println(participant.getName() + " не прошел препятсвтие "
-                    + barrier.getName());
-            return false;
-        }
-        return true;
-    }
-
-    private static boolean checkOfJumpHeight(Participant participant, Barrier barrier) {
-        participant.jump();
-        if (participant.getMaxJumpHeight() >= ((Wall) barrier).getHeight()) {
-            barrier.overcome();
-        } else {
-            System.out.println(participant.getName() + " не прошел препятсвтие "
-                    + barrier.getName());
-            return false;
-        }
-        return true;
+        Participant.passage(participants, barriers);
     }
 
 

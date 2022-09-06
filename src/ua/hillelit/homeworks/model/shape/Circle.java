@@ -16,7 +16,7 @@ public class Circle implements Calculateable {
 
     @Override
     public double calcSquare() {
-        return Math.PI * radius * radius;
+        return Math.PI * Math.pow(radius, 2);
     }
 
 
